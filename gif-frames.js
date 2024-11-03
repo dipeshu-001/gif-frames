@@ -14,7 +14,7 @@ var brokenPromise = {
   catch: nopromises
 };
 
-function gifFrames (options, callback) {
+function gifFrame (options, callback) {
   options = options || {};
   callback = callback || function () {};
 
@@ -117,4 +117,4 @@ function gifFrames (options, callback) {
   return promise;
 }
 
-module.exports = gifFrames;
+module.exports = gifFrame;
