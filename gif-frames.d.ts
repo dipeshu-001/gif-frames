@@ -2,7 +2,7 @@ import {Initializer} from "multi-integer-range";
 import {Canvas} from "canvas";
 import stream from "stream";
 
-declare module "gif-frames" {
+declare module "gif-frame" {
 
     export default function gifFrames<T extends GifFrameOptions>(options: T): Promise<GifFrameData<T>[]>;
     export default function gifFrames<T extends GifFrameOptions>(options: T, callback: (err: Error, frameData: GifFrameData<T>[]) => void): void;
